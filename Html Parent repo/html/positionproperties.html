@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            position: static;
+            background-color: bisque;
+            padding: 50px;
+            width: 600px;
+            margin: 25px;
+            left: 50px; */
+            /* <-- this is not effective */
+        /* } */
+
+        /* .box2 {
+            position: relative;
+            background-color: aquamarine;
+            padding: 50px;
+            margin: 25px;
+            left: 20px;
+            width: 600px;
+        }
+
+        .parent {
+            position: relative;
+            background-color: rgba(234, 32, 32, 0.366);
+            padding: 50px;
+            margin: 25px;
+
+            .child {
+                position: absolute;
+                top: 20px;
+                right: 50px;
+                background-color: orange;
+                padding: 25px;
+            }
+        }
+
+        #para {
+            background-color: burlywood;
+            position: fixed;
+            bottom: 10px;
+        }
+        #para1{
+            background-color: darkkhaki;
+            position:sticky;
+            top:50px;
+        } */
+         .div1{
+            position:relative;
+         }
+         img{
+            position:absolute;
+         }
+         #id1{
+            z-index: 3 ;
+         }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hola!!</h1>
+    <div class="box">
+        Static box
+    </div>
+    <div class="box2">
+        Relative box
+    </div>
+    <div class="parent">
+        <div class="child">Absolute Box</div>
+    </div> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati,
+        ut ea ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore
+        placeat veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam
+        nesciunt amet minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iusto illum vitae nemo obcaecati, ut ea
+        ipsam accusantium eligendi similique dolorum molestias magnam quam laboriosam, velit expedita tempore placeat
+        veniam. Delectus, deleniti nihil consequatur cupiditate voluptatem culpa repellendus quae aperiam nesciunt amet
+        minima distinctio ipsam impedit fuga quisquam earum omnis!</p> -->
+
+        <div class="div1">
+            <img id="id1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepJWNEG_FRm_KKWXC0tZQSVTOXA1WPWJlmHwuBMYe19Bp4Cn_N3Kzn1s&s=10">
+            <img id="id2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4HT_Lwu9SfsX2JvSerNk-jMjTDuPsX0U4n9Bq_S6NILjN997F-R6Ju2OA&s=10">
+            <img id="id3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwOj9HZ0C5wQK-uPNTRZFILOeesIqd0yRgG1FePMhUW8GMVM94nKrjnua&s=10">
+        </div>
+</body>
+
+</html>

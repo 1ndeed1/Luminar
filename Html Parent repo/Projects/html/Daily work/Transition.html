@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes tocircle {
+            from {
+                width: 400px;
+                height: 280px;
+                border-radius: 20px;
+                background-color: hwb(0 98% 2%);
+            }
+
+            to {
+                width: 350px;
+                height:350px;
+                border-radius:50%;
+                background-color: rgb(250, 251, 251);
+            }
+        }
+
+        body {
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            padding-top: 150px;
+        }
+
+        .circle {
+            width: 500px;
+            height: 280px;
+            border-radius: 20px;
+            background-image: url('./media/backimg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: hwb(0 98% 2%);
+            animation-name: tocircle;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

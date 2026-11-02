@@ -1,0 +1,400 @@
+* {
+    font-family: "Playfair Display", serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(34, 51, 43);
+    color: #f5efe6;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgb(20, 31, 26);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+    color: #e0a63a;
+}
+
+.brand {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #e0a63a;
+}
+
+.brandname {
+    margin-left: 15px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #f5efe6;
+    transition: 0.5s;
+}
+
+.link:hover {
+    color: #e0a63a;
+}
+
+.hero {
+    display: flex;
+    padding: 130px 8% 80px 8%;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herotext {
+    flex: 1;
+}
+
+.herotitle {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.heropara {
+    margin-bottom: 25px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+.herobutton {
+    padding: 12px 25px;
+    border: none;
+    background-color: #e0a63a;
+    color: rgb(20, 31, 26);
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.herobutton:hover {
+    background-color: white;
+}
+
+.heroimage {
+    flex: 1;
+}
+
+.restaurantimage {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.menu {
+    scroll-margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.menutitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    background-color: #f5efe6;
+    border-radius: 20px;
+    padding: 20px 17px;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    transition: 0.5s;
+}
+
+.newbadge {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    background-color: #b3392b;
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    padding: 8px 12px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.cardimage {
+    height: 310px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.dishname {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.dishprice {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cardbtn {
+    height: 40px;
+    width: 110px;
+    background-color: rgb(34, 51, 43);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+}
+
+.cardbtn:hover {
+    background-color: #e0a63a;
+    color: rgb(20, 31, 26);
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 8% 20px 8%;
+    margin: 40px 50px;
+    height: 450px;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#bannerHead {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#bannerPara {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.bannerButton {
+    padding: 10px 3%;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    transition: 0.4s;
+    background-color: #e0a63a;
+    cursor: pointer;
+}
+
+.bannerButton:hover {
+    background-color: white;
+}
+
+.Footersection {
+    margin: 10px;
+    background-color: rgb(20, 31, 26);
+    border-radius: 20px;
+    padding: 40px 6% 40px 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Contactsection {
+    font-size: 20px;
+}
+
+#Contacthead {
+    color: #e0a63a;
+    margin-bottom: 10px;
+}
+
+.Contactpara {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px;
+}
+
+.Contactlink {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.alink {
+    color: white;
+    transition: 0.5s;
+}
+
+.alink:hover {
+    color: #e0a63a;
+}
+
+.Subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.Subhead {
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Subinput {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Lato", sans-serif;
+}
+
+.subbutton {
+    padding: 8px;
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 10px;
+    background-color: #e0a63a;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.subbutton:hover {
+    background-color: white;
+}
+
+.Footerbar {
+    background-color: rgb(14, 22, 18);
+    border: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    #cancelIcon {
+        display: none;
+    }
+
+    #check:checked~.icons #menuIcon {
+        display: none;
+    }
+
+    #check:checked~.icons #cancelIcon {
+        display: block;
+    }
+
+    .navlinks {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        line-height: 30px;
+        background-color: rgb(20, 31, 26);
+    }
+
+    #check:checked~.navlinks {
+        display: block;
+        height: fit-content;
+    }
+
+    .links {
+        text-align: center;
+        margin: 5px 0px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 110px;
+    }
+
+    .restaurantimage {
+        height: 350px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        margin: 40px 15px;
+        height: auto;
+        padding: 40px 6%;
+    }
+
+    .Footersection {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

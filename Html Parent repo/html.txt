@@ -1,0 +1,290 @@
+HTML - Hyper text markup language
+  -> It is a standard markup language used to create the structure and content of a webpage. It tells the browser which content is a heading, paragraph, image, link, table, form etc...	
+  -> It is a markup language not a programming language and hmtl uses tags to describe content 
+  -> html files uses usually .html extension 
+  --------------------------------
+   Markup language is a language used to define the structure and meaning of content using special tags or symbol.
+  --------------------------------
+  HTML tags
+  -------------------------
+    -> Html tags are keywords written inside angle brackets that define elements or markup content.
+
+     <h1> hello all </h1>
+
+    => <h1> : opening tags
+    => hello all : content
+    => </h1> : closing tags
+    => the complete structure is an HTML element
+
+    Tag : markup enclosed in angle brackets
+
+    basic structure of html document 
+    --------------------------------
+    <html>
+    <head>
+        <title>
+            document
+        </title>
+    </head>
+    <body>
+        <h1>HTML 5 </h1>
+    </body>
+    </html>
+
+    1.<!DOCTYPE html> : Declares that the documents uses modern THML (html5).
+    2.<html lang=:"en"> : The root element containing the html document and the lang attributes specifies the primary language. 
+    3.<head> : Contains page metadata reference to resource. most of it's content are not displayed as page content.
+    4.<meta charset="UTF-8"> : specifies the character encoding so text and symbols can be represented correctly
+    5.<meta name="viewport" content ="width=device-width, initial-scale=1.0>: Helps the page display appropriately on mobile devices.
+    6.<title>documen</title> : Defines the page title shown in the browser tab.
+    7.<body> : contains the visible page content
+
+   Types of elemnts 
+   --------------------------------
+    => Paired elements
+        ->these typically have opening and closing tag
+        eg : <h1> hello this is an heading </h1>
+    => Void elements 
+        ->these do not have closing tag 
+        eg : <br>,<hr>,<img>...
+
+              TEXT FORMATTING
+-------------------------------------------
+    =>HTML formatting tags are used to change the appearance of text or indicate its meaning and importance
+    
+        <b>Bold text</b><br>
+        <i>Italic font text</i><br>
+        <strong>Strong text format</strong><br>
+        <u>THis text is underlined</u><br>
+        <del>Deleted text</del><br>
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.<sup>1</sup><br>
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.<super>1</super><br>
+        <mark>Marked text</mark><br>
+        <br><strong>Lists</strong>
+    
+    Html Lists
+    ------------------------
+    A list is a collection of related items dispalyed together .
+        1.Ordered list
+        2.Unordered list
+        3.Description List
+
+    eg:
+            <p>ordered lists:</p>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+
+            <p>unordered lists:</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+
+
+    Html table
+    ---------------------------------
+    An HTML table displays data in rows and columns.
+    => <table></table> : Creating the table
+    => <tr></tr> : Create a table row
+    => <th></th> : Create a header cell.
+    => <td></td> : Defines a regular data cell
+    =>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    => CSS Box model
+    ----------------
+    =>The css box model explains how every html element is displayed as a rectangula box on a webpage 
+    =>Each element consist of 4 parts
+        1.content : The actual content inside an element such as text images etc....
+        2.Padding : Padding is the space between the content and the border.
+        3.Border : The Border is the line surrounding the content and the padding.
+        4.Margin : The space outside the border seperating an element from the other elements.
+
+
+    => Css Transitions
+    -----------------
+        =>Transitions allows an element to change the css properties smoothly over a specified amount of time instead of changing instantly
+        => Syntax : 
+                    Selector {
+                        transition: property, duration, delay;
+                    }
+        => Four important transition properties 
+            1.transition-property : Which css property changes,ex:background color.
+            2.transition-duration : how long the changes takes,ex : 2s.
+            3.transtition-timing-function : How speed changes over time , ex : ease, linear 
+            4.transtion-delay : How long to wait before starting , ex : 1s   
+
+    => Css Animations
+    ----------------
+        =>Css animations allows us to change the style of an element over a period of time without using javascript. 
+        =>Syntax:
+            @keyframes animationName{
+                from{ //0%
+                    starting styling
+                }
+                to{  //100%
+                    ending style
+                }
+            }   
+        =>important css animation properties    
+            1.animation-name : Specifies the animation
+            2.animation-duration : time for one cycle.
+            3.animation-delay : wait before starting.
+            4.animation-iteration-count : Number of repetitions. ex:2,3, infinte.
+            5.animation-direction : direction to playback; ex normal,reverse,alternate..
+            6.animation-timing-function : controls speed progression ; eg: ease, linear.
+            7.animation-fill-mode : controls styles afte or before animation, ex: forwards    
+
+    =>Css position properties 
+    ------------------------
+        => The css position properties is usded to control where and html element appears on a webpage.
+        => It helps us place elements in specific location, such as positioning a nav bar at the top, placing text over an image 
+            or keeping a button fixed on the screen.
+        => There are 5 position values
+            -> Static 
+            -> Relative
+            -> Absolute
+            -> Fixed
+            -> Sticky
+
+            1.Static -> It is the default position of every html element.
+                     -> Elements appear in the normal document flow.
+                     -> The top, right, bottom and left properties do not move a statistically position element.
+
+            2.Relative -> The element stays in the normal document flow.
+                       -> You can move it relative to its original position using top,right,bottom and left.
+                       -> Its original space remains reserved.
+            
+            3. Absolute -> The element is removed from the normal HTML document flow.
+                        -> It is positioned relative to its nearest ancestor to the initial position other than static.
+                        -> If there is not such ancestor then its is positioned relative to the initial containing block usually the page.
+                    
+            4. Fixed -> The element is positioned relative to the browser viewport.
+                     -> It stays in the same place even when the page scrolls.
+                     -> It is removed from the normal document flow.
+            
+            5. Sticky -> The element behaves normally until it reaches a specified scroll position.
+                      -> It then sticks withing its scrolling container.
+                      -> It needs and insect such as top:0 to define where it should stick.
+
+        => Z-index
+        -----------
+            -> The css z-index property controls which element appears in front of or behind another element when they overlap.
+            -> Higher value gnerally appears in front and lower in behind
+
+    
+    =>CSS Media Queries
+    ------------------------------
+        => CSS Media Queries is used to make a website responsive. it allows us to apply different css style based on the devices
+           screen size, width, height, and other features.
+        => To make website mobile-friendly adjust layout, change sizes based on screen size, hide or show elements on different  devices or change the no of columns in a layout.
+        
+        => Standard Device Breakpoints
+            Screen          Category          Common devices
+            Extra small     <= 480px          Small phones, Mobile potrait viewport
+            Small           481-768px         Large phones, Tablets, Ipads
+            Medium          769px-1024px      Small Laptops,Large Tablets
+            Large           1025px-1200px     Standard Desktops, Large Laptops
+            Extra Large     >1200px           Large Monitors,
+
+    
+
+---------------------------------------Bootstrap-------------------------------
+    => Bootstrap is a free open-source css framework used to develop responsive and mobile-friendly website quickly.
+    => It provides predefined components like : Css classes, button, layout systemms, forms, cards, modals, navbar, responsive utitlites etc....
+    => Instead of writing css manually we can use Bootstrap predefined classes and components.
+    => Advantages :
+        ->Easy to learn.
+        ->Saves development time.
+        ->Responsive design.
+        ->Predefined CSS classes.
+        ->Cross browser compatibility.
+        ->Ready made UI components.
+        ->Customizable using Css.
+    => To use Bootstrap add Bootstrap Css and javascript CDN links inside the html file. 
+    =>Bootstrap Containers :
+        -> .container : responsive fixed-width container.
+        -> .container-fluid : 100% width container.
+        -> .container-{Breakpoints} : Full width until specified Breakpoints.
+    =>Bootstrap Grid systems:
+        -> Bootstrap uses a 12-column grid system to create responsive layouts.
+        -> A grid contains 3 main parts :
+            -> Container
+            -> row
+            -> column
+            eg: col-12 12columns would be taken , col-6 6 columns would be taken 
+    => Responsive Grid System:
+        ->Bootstrap Provides Breakpoints classes to adjust layouts according to screen sizes.
+            -> Extra Small          - col-          no-Breakpoints
+            -> Small                - col-sm-       576px
+            -> Medium               - col-md-       768px
+            -> Large                - col-lg-       992px
+            -> Extra Large          - col-xl-       1200px
+            -> XXL                  - col-xxl-      1400px
+    => Bootstrap Colors: Primary, secondary, danger, warning, info, dark, success, light 
+    => Bootstrap Typography : To style text.
+        -> text-start, text-center, text-end, fw-bold, fw-normal, text-uppercase, text-decoration-none.
+    => Bootstrap Buttons: Provides Predefined button styles
+        -> btn: give us a basic button
+        -> btn-primary, btn-secondary, btn-outline-success etc..
+        -> btn-lg- : Large button.
+        -> btn-sm- : small button.
+        -> w-100 : Full width button.
+        -> disabled : Disabled button.
+    => Bootstrap spacing utilities
+        -> Bootstrap provides margin and padding utility classes.
+        -> m-margin & p - padding
+        -> m-3 : margin all sides.
+        -> mt-3: margin top
+        -> mb-3 : margin bottom
+        -> ms-3 : margin start
+        -> me-3 : margin end
+        -> py : vertically Padding
+        -> px : Horizontally padding
+        -> Spacing values usually range from 0-5 with auto available for applicable margin utilities.
+    => Bootstrap display utilities:
+        ->d-none, d-flex, d-inline, d-inline-block, d-block, d-grid.
+----------------------------------------------------------------------------------------------------
+-----------------------------------Git & github-----------------------------------------
+----------------------------------------------------------------------------------------------------
+    GIT
+    ---------
+        =>Git is a distributed version control system used to track changes in source code.
+        =>Git helps developers save different versoin of their code and track what changes they have made.
+        => Mostly used for:
+            -> Track changes in code.
+            -> Restore previous version.
+            -> Work with mulitple developers.
+            -> Manage project versions.
+            -> avoid losing important code.
+    
+    Github
+    -------
+        => Github is an online platfrom where developers host git repositories and collaborate on projects.
+    

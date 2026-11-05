@@ -1,0 +1,105 @@
+--------------------------------------------------------------Javascript--------------------------------------------------------------
+    ->Javascript is a programming language (Scripting language) used in both frontend and backend.
+    ->Initially it was introduced in frontend.
+    ->v8 engine is used to run javascript in browser.
+    ->Node.js is used to run Javascript outside the browser.
+    ->Frontend  =  Behaviours
+    ->Backend   =  Logical operations
+    ->Dynamically typed language where you dont need to specify the data type manually. Datatype will be changed accordingly to the assigned value. 
+    ->Single threaded programming language : Executes one taks at a time , line by line execution. Javascript is single threaded language but used asyn features like setTimeout, promise.
+    ->Javascript supports both procedural and object oriented programming.
+
+    Node.javascript
+    -----------------------------------------------------------
+        => Node.js is a runtime environment that lets you to run Javascript outside the browser.Mainly used for building backend applications.
+        => v8 Engine : V8 Javascript Engine is an open source engine developed by google that executes Javascript Code.
+        => Procedural programming : It is a style of writing code where we can code as a predefined step by step format.
+
+------------------------------------ Procedural programming ------------------------------------
+    => To create a Javascript File, the extension should be in .js (Filename.js)
+    => To run js file - node filename.js is the format
+    
+    Datatypes
+    ---------
+    -> There are two types of datatypes in Javascript.
+        1. Primitive Datatype
+        2. Non-Primitive Datatype
+
+        Primitive Datatype
+            -> Base Datatype
+            -> Immutable : Cannot change original value, but can reassign the value.
+
+                1. String : Sequence of Characters 
+                2. Number : Integer and floating points.
+                3. Boolean : Logical values. True/False
+                4. Null : Intentional absence of value.
+                5. Undefined : Not assigned value. Let x 
+                6. BigINT : Large number outside boundary of number category.
+                7. Symbol : Used to uniquely identify a content, used in creating libraries. Ex: let variable = symbol("content")
+
+        Non-Primitive Datatype
+            ->Derived Datatype : Combination of primitive datatypes
+            ->Mutable : Can change the original value , can reassign new value.
+            8. object : data is stored as key:value pairs.
+                ex: Array, object, Functions
+    
+    variable
+    --------------
+    ->Variables are used to store data.
+    ->Rules to create variables.
+        ->Variable name can have alphabets, number, underscore, etc......
+        ->Variable name cannot start with a digit/number, but subsequence characters can be digit       
+        ->if a variable contains more than one word the word should not have space 
+          camelCase = variableName
+          snake_case = variable_name
+          car,CAR,cAR,cAR,cAr,Car -> all are different
+
+        syntax:
+        1. Varialbe name = value 
+        2. Keyword variable name = value 
+
+    Keywords
+    ----------------
+        ->keywords are reserved words with special meaning in Javascript. You can't use them as variable names.
+        ->eg : let, const, if , else, for, function, return, class, new, true, and null.
+            eg:
+                1. let : reassign is possible, redeclaration is not possible, block scope
+                2. var : reassign is possible, redeclaraion is possible, global scope
+                3. const: reassign is not possible , redeclaraion is not possible, global scope
+    
+    Variable Hoisting
+    ----------------------
+        -> Variable hoisting means Javascript moves variable declaration declaration to the top of the 
+         
+    Concatenations
+    --------------
+        -> Adding up of data
+            -> number + string = string
+            -> number + number = number
+            -> string + number = string
+            -> string + string = string
+        
+    Operators
+    -------------
+    1.Assignment operator (=)
+    2.Arithmetic operator (+ , - , * , / , % , ^ , **)
+    3.Relational operator (>, <, >=, <=, !=, !==, ==, ===)
+    4.Logical operators (AND(&&), OR (||), NOT(!))
+        AND(&&)
+        T && T = T
+        T && F = F
+        F && T = F
+        F && F = F
+
+        OR(||)
+        T || T = T
+        T || F = T
+        F || T = T
+        F || F = F
+        
+        NOT(!)
+        T! = F
+        F! = T
+    5.Shorthand Operator (+=,-=)
+    6.PostIncrement(x++), preincrement(++x)
+ 
